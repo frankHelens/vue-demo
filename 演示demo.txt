@@ -1,0 +1,59 @@
+开启vuejs之旅
+
+vue.js 概况
+  介绍
+  原理
+
+vue.js 核心思想
+  数据驱动
+  组件化
+
+vue.js 基础知识（以静态页面的demo方式展示）
+  helloworld
+  模板语法
+  条件渲染
+  列表渲染
+  事件处理
+  双向绑定
+
+vue.js 生命周期（以静态页面的demo方式展示）
+  
+
+vue在项目中的使用
+  使用vue-cli(命令行工具) 构建搭建vue的应用
+  组件化的封装以及使用
+  第三方UI插件的使用
+
+
+
+
+生命周期
+data: {
+      message: 'Hello Vue!'
+  },
+  beforeCreate: function () {
+      console.log("vue beforeCreate......")
+  },
+  created: function () {
+      console.log("vue created......")
+  },
+  beforeMount: function () {
+      console.log("vue beforeMount......")
+  },
+  mounted: function () {
+      console.log("vue mounted......")
+  },
+  beforeUpdate: function () {
+      console.log("vue beforeUpdate......")
+  },
+  updated: function () {
+      console.log("vue updated......")
+  },
+  beforeDestroy: function () {
+      console.log("vue beforeDestroy......")
+  },
+  destroyed: function () {
+      console.log("vue destroyed......")
+  }
+
+数据劫持: vue.js 则是采用数据劫持结合发布者-订阅者模式的方式，通过Object.defineProperty()来劫持各个属性的setter，getter，在数据变动时发布消息给订阅者，触发相应的监听回调。
